@@ -2,6 +2,7 @@ package mystikos.phonelookup;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberFormattingTextWatcher;
@@ -28,10 +29,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lookup(View v) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("http://www.whitepages.com/phone/" + Jphone.getText().toString()));
-        startActivity(intent);
+//        Intent intent = new Intent();
+//        intent.setAction(Intent.ACTION_VIEW);
+//        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+//        intent.setData(Uri.parse("http://www.whitepages.com/phone/" + Jphone.getText().toString()));
+//        startActivity(intent);
+        Uri uri = Uri.parse("http://www.whitepages.com/phone/" + Jphone.getText().toString());
+        CustomTabsIntent.Builder intentBuilder = new CustomTabsIntent.Builder();
+        CustomTabsIntent customTabsIntent = intentBuilder.build();
+        customTabsIntent.launchUrl(this, uri);
     }
 }
