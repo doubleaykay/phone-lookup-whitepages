@@ -22,11 +22,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lookup(View v) {
-//        Intent intent = new Intent();
-//        intent.setAction(Intent.ACTION_VIEW);
-//        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-//        intent.setData(Uri.parse("http://www.whitepages.com/phone/" + Jphone.getText().toString()));
-//        startActivity(intent);
         Uri uri = Uri.parse("http://www.whitepages.com/phone/" + Jphone.getText().toString());
         CustomTabsIntent.Builder intentBuilder = new CustomTabsIntent.Builder();
         CustomTabsIntent customTabsIntent = intentBuilder.build();
