@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Anoush\Documents\Git\phone-lookup-whitepages\app\app.iml" filepath="C:\Users\Anoush\Documents\Git\phone-lookup-whitepages\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/phone-lookup-whitepages.iml" filepath="$PROJECT_DIR$/phone-lookup-whitepages.iml" />
-      <module fileurl="file://C:\Users\Anoush\Documents\Git\phone-lookup-whitepages\phone-lookup-whitepages.iml" filepath="C:\Users\Anoush\Documents\Git\phone-lookup-whitepages\phone-lookup-whitepages.iml" />
     </modules>
   </component>
 </project>
